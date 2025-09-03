@@ -1,0 +1,14 @@
+html{
+    background-color: #edecd5;
+    background-image: url(../images/Regions_de_France_2016.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  table td {
+      background-color: darkolivegreen;
+      color: #edecd5;
+      padding : 3pt;
+  }
