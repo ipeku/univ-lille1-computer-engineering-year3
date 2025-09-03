@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Horloge</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="" />
+        <script src="checkbox.js"></script>
+        <style>
+            form input[name='bg']:disabled{
+                color : lightgrey;
+                opacity : 0.2;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Formulaire Horloge</h1>
+        </header>
+        
+       <!-- à compléter par un formulaire -->
+
+       <form action="horloge.php" method="GET">
+        <fieldset>
+            <legend>Entrez les paramètres</legend>
+            <label for="hours">Heures (0-23) :</label>
+            <input type="number" id="hours" name="hours" min="0" max="23" step="1" required />
+
+            <label for="minutes">Minutes (0-59) :</label>
+            <input type="number" id="minutes" name="minutes" min="0" max="59" step="1" required />
+
+     
+            <label for="seconds">Secondes (0-59) :</label>
+            <input type="number" id="seconds" name="seconds" min="0" max="59" step="1" required />
+
+            <label for="hands">Couleur des aiguilles :</label>
+            <input type="color" id="hands" name="hands" value="#000000" />
+
+            <label for="markers">Couleur des marqueurs :</label>
+            <input type="color" id="markers" name="markers" value="#808080" />
+    
+            <label for="bg">Couleur de fond :</label>
+            <input type="color" id="bg" name="bg" value="#ffffff" />
+            <input type="checkbox" id="transparent_bg" name="transparent_bg" onclick="toggleBgColor()" checked="true" />
+            <label for="transparent_bg">Transparent</label>
+        </fieldset>
+
+        <input type="submit" value="Envoyer" />
+        </form>
+        <script src="toggleBg.js"></script>
+    
+</html>
